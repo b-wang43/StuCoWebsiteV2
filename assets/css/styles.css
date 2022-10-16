@@ -474,7 +474,7 @@ the website, in dark theme
 }
 
 .steps__card-title{
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   margin-bottom: var(--mb-0-5);
 }
 
@@ -721,7 +721,7 @@ the website, in dark theme
 .footer__container{
   row-gap: 3rem;
 }
-
+/* 
 .footer__logo{
   display: inline-flex;
   align-items: center;
@@ -732,7 +732,7 @@ the website, in dark theme
   letter-spacing: -1px;
   margin-bottom: var(--mb-2-5);
   transition: .3s;
-}
+} */
 
 .footer__logo-icon{
   font-size: 1.15rem;
@@ -748,26 +748,26 @@ the website, in dark theme
   margin-bottom: var(--mb-1-5);
 }
 
-.footer__subscribe{
+/* .footer__subscribe{
   background-color: var(--first-color-lighten);
   padding: .75rem;
   display: flex;
   justify-content: space-between;
   border-radius: .5rem;
-}
+} */
 
-.footer__input{
+/* .footer__input{
   width: 70%;
   padding: 0 .5rem;
   background: none;
   color: var(--text-color);
   border: none;
   outline: none;
-}
+} */
 
-.footer__button{
+/* .footer__button{
   padding: 1rem;
-}
+} */
 
 .footer__data{
   display: grid;
