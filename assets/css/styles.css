@@ -15,6 +15,7 @@
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
+  --neutral-colour: 	hsl(11, 49%, 81%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
 
@@ -323,6 +324,40 @@ the website, in dark theme
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+}
+
+.sub__carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.sub__card{
+  background-color: var(--container-color);
+  padding: 2.5rem 3rem 2rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.sub__card-number{
+  display: inline-block;
+  background-color: var(--first-color-alt);
+  color: #FFF;
+  padding: .5rem .75rem;
+  border-radius: .25rem;
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-1-5);
+  transition: .3s;
+}
+
+.sub__card-title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.sub__card-description{
+  font-size: var(--small-font-size);
+}
+
+.sub__card:hover .steps__card-number{
+  transform: translateY(-.25rem);
 }
 
 /*=============== HOME ===============*/

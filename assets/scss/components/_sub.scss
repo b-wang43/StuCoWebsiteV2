@@ -21,4 +21,38 @@
         scroll-snap-type: x mandatory;
         scrollbar-width: none;
     }
+
+    &__carrousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__card{
+        background-color: var(--container-color);
+        padding: 2.5rem 3rem 2rem 1.5rem;
+        border-radius: 1rem;
+      }
+      
+      &__card-number{
+        display: inline-block;
+        background-color: var(--first-color-alt);
+        color: #FFF;
+        padding: .5rem .75rem;
+        border-radius: .25rem;
+        font-size: var(--h2-font-size);
+        margin-bottom: var(--mb-1-5);
+        transition: .3s;
+      }
+      
+      &__card-title{
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-0-5);
+      }
+      
+      &__card-description{
+        font-size: var(--small-font-size);
+      }
+      
+      &__card:hover .steps__card-number{
+        transform: translateY(-.25rem);
+      }
 }
