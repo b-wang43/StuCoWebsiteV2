@@ -331,6 +331,7 @@ the website, in dark theme
 }
 
 .sub__card{
+  scroll-snap-align: start;
   background-color: var(--container-color);
   padding: 2.5rem 3rem 2rem 1.5rem;
   border-radius: 1rem;
