@@ -13,6 +13,10 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!--=============== Calendar ===============-->
+        <link rel="stylesheet" href="asets/css/evo-calendar.min.css">
+        <link rel="stylesheet" href="asets/css/evo-calendar.midnight-blue.min.css">
+
         <title>Responsive plants website - Bedimcode</title>
     </head>
     <body>
@@ -56,10 +60,13 @@
             </nav>
         </header>
 
-        <main class="main">
-            <!--==================== HOME ====================-->
-            
-                   
+        <!--==================== CALENDAR ====================-->
+        <section class="home" id="home">
+            <div class="calendarBg">
+                <div id="calendar"></div>
+            </div>
+        </section>
+        
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
@@ -107,5 +114,16 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+
+        <!--=============== Calendar ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+        <script src="assets/js/evo-calendar.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>          
+        <script>
+            $(document).ready(function() {
+                $('#calendar').evoCalendar({
+                })
+            })
+        </script>
     </body>
 </html>
