@@ -15,6 +15,7 @@
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
+  --neutral-colour: 	hsl(11, 49%, 81%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
 
@@ -298,6 +299,67 @@ the website, in dark theme
   background-color: var(--first-color);
 }
 
+/*=============== SUB ===============*/
+.sub{
+  padding: 3.5rem 0 1rem;
+}
+
+.sub__container{
+  position: relative;
+  row-gap: 1rem;
+}
+
+.sub__title{
+  font-size: var(--h1-font-size);
+  line-height: 120%;
+  margin-bottom: var(--mb-1);
+}
+
+.sub__carrousel{
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.sub__carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.sub__card{
+  background-color: var(--container-color);
+  padding: 2.5rem 3rem 2rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.sub__card-number{
+  display: inline-block;
+  background-color: var(--first-color-alt);
+  color: #FFF;
+  padding: .5rem .75rem;
+  border-radius: .25rem;
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-1-5);
+  transition: .3s;
+}
+
+.sub__card-title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.sub__card-description{
+  font-size: var(--small-font-size);
+}
+
+.sub__card:hover .steps__card-number{
+  transform: translateY(-.25rem);
+}
+
 /*=============== HOME ===============*/
 .home{
   padding: 3.5rem 0 2rem;
@@ -307,6 +369,7 @@ the website, in dark theme
   position: relative;
   row-gap: 2rem;
 }
+
 
 .home__img{
   width: 200px;
@@ -318,6 +381,7 @@ the website, in dark theme
   line-height: 140%;
   margin-bottom: var(--mb-1);
 }
+
 
 .home__description{
   margin-bottom: var(--mb-2-5);
@@ -439,6 +503,7 @@ the website, in dark theme
   color: var(--first-color);
   margin-top: .15rem;
 }
+
 
 /*=============== STEPS ===============*/
 .steps__bg{
