@@ -83,3 +83,6 @@ document.querySelector('#next-year').onclick = () => {
     ++curr_year.value
     generateCalendar(curr_month.value, curr_year.value)
 }
+
+//Events on specific days
+let selectedDate = new Date(curr_year.value, curr_month.value, )// find a way to select a date on the calendar
