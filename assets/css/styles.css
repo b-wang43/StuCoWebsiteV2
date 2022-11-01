@@ -328,7 +328,7 @@ the website, in dark theme
 }
 
 .sub__carrousel::-webkit-scrollbar {
-  display: none;
+  display:flex;
 }
 
 .sub__card{

@@ -23,7 +23,7 @@
     }
 
     &__carrousel::-webkit-scrollbar {
-        display: none;
+        display: flex;
     }
 
     &__card{
