@@ -18,8 +18,7 @@
   --neutral-colour: 	hsl(11, 49%, 81%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
-  --container-color-light: 	hsl(11, 49%, 81%);
-  --container-color-dark: 	hsl(11, 11%, 48%);
+  --cont-color-light: 	hsl(11, 49%, 81%);
   --hover: #323048;
 
   /*========== Font and typography ==========*/
