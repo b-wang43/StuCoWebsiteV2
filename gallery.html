@@ -12,7 +12,7 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
-
+        <style type="text/css"></style>
         <title>Gallery</title>
     </head>
     <body>
@@ -59,31 +59,67 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
-                <div class="home__container container grid">
-                    <!--<img src="assets/img/home.png" alt="" class="home__img">-->
-
-                    <div class="home__data">
-                        <h1 class="home__title">
-                            Gallery
-                        </h1>
-                        <p class="home__description">
-                            A look into our 2022 -2023 school year
-                        </p>
-                    </div>
-
-                    <div class="home__social">
-                        <span class="home__social-follow">Follow Us</span>
-
-                        <div class="home__social-links">
-                            <a href="https://www.instagram.com/rhhs_stuco/" target="_blank" class="home__social-link">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                            <a href="https://twitter.com/RHHS_StuCo" target="_blank" class="home__social-link">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </div>
-                    </div>
+                <div class="gallery-data">
+                    <h1 class="home__title">
+                        Gallery
+                    </h1>
+                    <p class="gallery-desc">
+                        A look into our 2022 -2023 school year
+                    </p>
                 </div>
+                <div class="full-img" id="fullImgBox">
+                    <img src="assets/img/ZLY_0656AH.JPG" id="fullImg">
+                    <span onclick="closeFullImg()">X</span>
+                </div>
+                <div class="img-gallery">
+                    <img src="assets/img/ZLY_0656AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9541.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0721AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0815AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0977AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0824.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0968AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9542.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_7221.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9562.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_7222.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_7225.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_7227.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_7228.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/BC6BB5DB-EE52-4B63-9F88-E5806B9C1C98.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9494.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9497.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_8201.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9504.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_8203.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0709AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9547.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9553.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9567.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0990AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_9569.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/87CCF027-02F4-47E1-A123-CAE0AB86D8F9.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/E5E0D4F2-4B71-45DC-A8B0-E04F9431F104.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0695AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0698AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/IMG_8204.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0717AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0871AH.JPG" onclick="openFullImg(this.src)">
+                    <img src="assets/img/ZLY_0908AH.JPG" onclick="openFullImg(this.src)">
+                </div>
+                <script>
+                    var fullImgBox = document.getElementById("fullImgBox")
+                    var fullImg = document.getElementById("fullImg");
+                    function openFullImg(pic){
+                        fullImgBox.style.display = "flex";
+                        fullImg.src = pic;
+                    }
+
+                    function closeFullImg(){
+                        fullImgBox.style.display = "none";
+                    }
+
+                </script>
             </section>
 
         <!--==================== FOOTER ====================-->
