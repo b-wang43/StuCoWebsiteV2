@@ -18,6 +18,8 @@
   --neutral-colour: 	hsl(11, 49%, 81%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
+  --container-color-light: 	hsl(11, 49%, 81%);
+  --container-color-dark: 	hsl(11, 11%, 48%);
   --hover: #323048;
 
   /*========== Font and typography ==========*/
@@ -692,6 +694,99 @@ the website, in dark theme
 
 .accordion-open .questions__icon{
   transform: rotate(45deg);
+}
+
+/*============== CALENDAR LIST ==================*/
+.event-container {
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-container h3.year {
+  font-size: 40px;
+  text-align: left;
+}
+
+.event-container .event {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  border-radius: 8px;
+  margin: 32px 0;
+}
+
+.event .event-left {
+  background: var(--first-color);
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--container-color);
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.event .event-left .date {
+  font-size: 56px;
+}
+
+.event .event-left .month {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.event .event-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.event .event-right h3.event-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: var(--first-color-alt);
+  text-transform: uppercase;
+}
+
+.event .event-right .event-timing {
+  background: var(--container-color);
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  width: 150px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.event .event-right .event-timing img {
+  height: 20px;
+  padding-right: 8px;
+}
+
+@media (max-width: 550px) {
+  .event {
+    flex-direction: column;
+  }
+
+  .event .event-left {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .event .event-left .event-date .date,
+  .event .event-left .event-date .month {
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .event .event-left .event-date {
+    padding: 10px 0;
+  }
 }
 
 /*=============== CONTACT ===============*/
